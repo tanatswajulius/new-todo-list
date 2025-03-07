@@ -1,0 +1,51 @@
+/**
+ * Auth.css
+ * --------
+ * Styles for the login/register component.
+ */
+
+ .auth-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .auth-input {
+    padding: 0.5rem;
+    background-color: #F5DEB3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .auth-buttons button {
+    background-color: #D2B48C;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .auth-buttons button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  

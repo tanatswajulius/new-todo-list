@@ -1,0 +1,84 @@
+/**
+ * App.css
+ * -------
+ * Global styles for layout, plus the main container styling and color scheme.
+ */
+
+ body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0; /* Light, warm background */
+  }
+  
+  .app-container {
+    padding: 1rem 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    color: #8B4513; /* a darker brown for emphasis */
+    margin: 0;
+  }
+  
+  .logout-button {
+    background-color: #D2B48C; /* Tan */
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .logout-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  
+  .create-list-form {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  
+  .list-input {
+    width: 200px;
+    padding: 0.5rem;
+    background-color: #F5DEB3; /* wheat */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .create-list-button {
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .create-list-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  
+  .lists-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .single-list-droppable {
+    width: 250px;
+    min-height: 200px;
+  }
+  

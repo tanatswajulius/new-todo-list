@@ -1,0 +1,82 @@
+/**
+ * List.css
+ * --------
+ * Styles for the List component.
+ */
+
+ .list-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 100px;
+  }
+  
+  .list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .list-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #8B4513;
+    cursor: pointer;
+  }
+  
+  .list-title-input {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .delete-list-button {
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .delete-list-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  
+  .new-item-form {
+    display: flex;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-input {
+    flex: 1;
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    background-color: #F5DEB3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-item-button {
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .add-item-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  
+  .draggable-item-wrapper {
+    margin-bottom: 0.5rem;
+  }
+  

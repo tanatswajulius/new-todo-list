@@ -1,0 +1,105 @@
+/**
+ * Item.css
+ * --------
+ * Styles for an individual todo item and its sub-items.
+ */
+
+ .item-container {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 0.25rem 0;
+    padding: 0.5rem;
+  }
+  
+  .item-complete {
+    opacity: 0.6; 
+    text-decoration: line-through;
+  }
+  
+  .item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .complete-checkbox {
+    transform: scale(1.2);
+  }
+  
+  .collapse-button {
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .collapse-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  
+  .item-content {
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .item-edit-input {
+    flex: 1;
+    padding: 0.3rem;
+  }
+  
+  .delete-item-button {
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .delete-item-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  
+  .sub-item-section {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .sub-item-list {
+    margin-left: 0.5rem;
+  }
+  
+  .new-sub-item-form {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .sub-item-input {
+    flex: 1;
+    padding: 0.3rem;
+    background-color: #F5DEB3;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+  }
+  
+  .add-sub-item-button {
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  .add-sub-item-button:hover {
+    background-color: #fff;
+    color: #D2B48C;
+    border: 1px solid #D2B48C;
+  }
+  

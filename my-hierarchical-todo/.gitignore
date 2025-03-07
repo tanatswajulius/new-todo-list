@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+instance/
+.env
+
+# Node
+node_modules/
+build/
+npm-debug.log
+package-lock.json
+
+# OS
+.DS_Store
+
+# DB
+*.db
