@@ -37,6 +37,12 @@ def get_current_user():
         return None
     user = User.query.get(user_id)
     return user
+#####################################################
+# HELLO WORLD
+#####################################################
+@app.route("/api/")
+def hello():
+    return jsonify({"message": "Hello, World!"})
 
 #####################################################
 # AUTHENTICATION ROUTES
@@ -45,19 +51,38 @@ def get_current_user():
 def register():
     """
     Register a new user. 
+    Validates email and password are provided and valid.
     Expects JSON: { "email": "...", "password": "..." }
     """
     data = request.json
-    email = data["email"]
-    password = data["password"]
+    
+    # Validate required fields
+    if not data or "email" not in data or "password" not in data:
+        return jsonify({"error": "Email and password are required"}), 400
+        
+    email = data["email"].strip()
+    password = data["password"].strip()
 
+    # Validate email and password are not empty
+    if not email:
+        return jsonify({"error": "Email cannot be blank"}), 400
+    if not password:
+        return jsonify({"error": "Password cannot be blank"}), 400
+        
+    # Validate minimum password length (optional)
+    if len(password) < 6:
+        return jsonify({"error": "Password must be at least 6 characters"}), 400
+        
+    # Check if email already exists
     existing_user = User.query.filter_by(email=email).first()
     if existing_user:
         return jsonify({"error": "Email already taken"}), 400
 
+    # Create new user
     new_user = User(email=email, password=password)
     db.session.add(new_user)
     db.session.commit()
+    
     return jsonify({"message": "User registered successfully"}), 201
 
 @app.route("/api/login", methods=["POST"])
