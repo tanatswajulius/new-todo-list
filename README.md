@@ -40,13 +40,16 @@
    cd server
    pip install -r requirements.txt
    python app.py
+   ```
    Runs at http://127.0.0.1:5000
    Creates database.db if not present.
 
-2. **Client**: 
-    cd ../client
+2. **Client**:
+    ```bash
+    cd client
     npm install
     npm start
+    ```
     Runs at http://localhost:3000
 
 3. **Usage**: 
