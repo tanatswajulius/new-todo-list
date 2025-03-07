@@ -9,7 +9,9 @@
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
-    min-height: 100px;
+    min-height: 200px;
+    width: 100%; 
+    box-sizing: border-box;
   }
   
   .list-header {
@@ -77,6 +79,7 @@
   }
   
   .draggable-item-wrapper {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    width: 100%;
   }
   

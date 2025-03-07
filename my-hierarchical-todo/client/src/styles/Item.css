@@ -10,7 +10,12 @@
     background-color: #fff;
     margin: 0.25rem 0;
     padding: 0.5rem;
+    max-width: 95%; /* ensure it doesn't overflow parent */
   }
+
+  .item-container[style*="margin-left"] {
+    max-width: calc(95% - 40px); /* or so, ensuring we can indent but not break layout */
+    }
   
   .item-complete {
     opacity: 0.6; 
@@ -68,10 +73,12 @@
   .sub-item-section {
     margin-left: 1.5rem;
     margin-top: 0.5rem;
+    max-width: 100%;
   }
   
   .sub-item-list {
     margin-left: 0.5rem;
+    max-width: 100%;
   }
   
   .new-sub-item-form {

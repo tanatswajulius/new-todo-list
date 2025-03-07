@@ -103,6 +103,7 @@ function App() {
   // Otherwise, show the main ToDo interface
   return (
     <div className="app-container">
+    <div className="main-content">
       <div className="header">
         <h1>The ToDo App</h1>
         <button
@@ -148,6 +149,7 @@ function App() {
         </div>
       </DragDropContext>
     </div>
+  </div>
   );
 }
 
