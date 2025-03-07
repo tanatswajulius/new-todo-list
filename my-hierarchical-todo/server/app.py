@@ -40,7 +40,7 @@ def get_current_user():
 #####################################################
 # HELLO WORLD
 #####################################################
-@app.route("/api/")
+@app.route("/")
 def hello():
     return jsonify({"message": "Hello, World!"})
 
